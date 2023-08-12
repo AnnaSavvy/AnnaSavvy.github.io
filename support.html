@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Success Washboard</title>
+  <meta name="description" content="Success Washboard">
+  <meta name="author" content="Anna Savitskaia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril%20Fatface">
+</head>
+
+<body>
+  <header>
+    <h1>Call us now! <a href="tel:1-777-777-7777">1-777-777-7777</a></h1>
+
+  </header>
+  <nav id="nav_menu">
+    <img src="assets/img/logo.png" alt="Logo" width="100" height="100">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="support.html" class="current">Support</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+  <main class="hero">
+    <section>
+      <h2>Rerurn and repair policy:</h2>
+      <p>Our company provides 30-day return guarantee. <br> If you are not happy with your product, you can return it
+        within 30 day after the purchase. <br>
+        As well we can gladly offer such options as exchange for a new product, or for a sepcial coupon. <br /><br />
+        Success Washboard has it's own service center, where you can apply for repair. <br> You can specify warranty
+        period in the product documents or contact our manager. <br /><br />
+        For any questions please call 1-777-777-7777 or fill in an application form below:
+      </p>
+    </section>
+    <figure><img src="assets/img/product.jpg" alt="Washboard" width="400">
+    </figure>
+  </main>
+  <section class="flexItem" id="application">
+    <h2>Application Form</h2>
+    <form name="upload_form" action="#" method="post" enctype="multipart/form-data">
+      <label for="first_name">First Name: </label>
+      <input type="text" id="first_name" name="first_name" required>
+      <label for="last_name">Last Name: </label>
+      <input type="text" id="last_name" name="last_name" required>
+      <label id="emailLabel" for="email">Email: </label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required placeholder="333-333-333">
+
+      <label for="address">Address: </label>
+      <input type="text" id="address" name="address" required>
+      <label for="postal">Postal: </label>
+      <input type="text" id="postal" name="postal" required placeholder="A1B-2C3">
+      <label for="province">Province</label>
+      <select id="province" name="province">
+        <option value="ontario">Ontario</option>
+        <option value="alberta">Alberta</option>
+        <option value="british columbia">British Columbia</option>
+        <option value="manitoba">Manitoba</option>
+        <option value="new brunswick">New Brunswick</option>
+        <option value="newfoundland and labrador">Newfoundland and Labrador</option>
+        <option value="nova scotia">Nova Scotia</option>
+        <option value="prince edward island">Prince Edward Island</option>
+        <option value="quebec">Quebec</option>
+        <option value="saskatchewan">Saskatchewan</option>
+        <option value="northwest territories">Northwest Territories</option>
+        <option value="nunavut">Nunavut</option>
+        <option value="yukon">Yukon</option>
+      </select>
+      <label for="country">Country: </label>
+      <input type="text" id="country" name="country" value="Canada" required readonly>
+      <span id="seeking">Reason</span>
+      <div>
+        <input type="radio" name="reason" id="repare">
+        <label for="repare">Repare</label>
+        <input type="radio" name="reason" id="return" checked>
+        <label for="return">Return</label>
+      </div>
+      <span></span>
+      <span></span>
+      <span id="contact">How to contact:</span>
+      <div class="gridWidth">
+        <input type="checkbox" id="call" name="call_me">
+        <label for="call">Call me</label>
+        <input type="checkbox" id="email" name="email_me">
+        <label for="email">Email me</label>
+        <input type="checkbox" id="text" name="text_me">
+        <label for="text">Text me</label>
+        <input type="checkbox" id="mail" name="mail_me">
+        <label for="mail">Mail me</label>
+      </div>
+      <span id="picture">Photo of problem: </span>
+      <input type="file" name="fileupload" accept=".jpg,.png,.jpeg">
+      <span></span>
+      <span></span>
+      <span id="comments">Comments: </span>
+      <textarea name="comments" placeholder="If you have any comments, please enter them here"></textarea>
+      <div class="gridFullWidth">
+        <input type="checkbox" id="job" name="job">
+        <label for="job">Subscribe for new products</label>
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I agree to the Terms and Conditions</label>
+      </div>
+      <div class="gridFullWidth">
+        <input class="formButton" type="submit" value="Submit">
+        <input class="formButton" type="reset" id="reset">
+      </div>
+    </form>
+  </section>
+</body>
+<footer>
+  <p>Success Washboard All Rights Reserved &copy; </p>
+  <p>2023</p>
+</footer>
+
+</html>
