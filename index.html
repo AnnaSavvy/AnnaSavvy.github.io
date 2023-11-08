@@ -2,90 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Success Washboard</title>
-    <meta name="description" content="Success Washboard">
-    <meta name="author" content="Anna Savitskaya">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril%20Fatface">
-
+  <meta charset="UTF-8">
+  <title>How Sweet Is This!</title>
+  <meta name="description" content="Favoutite candy">
+  <meta name="author" content="Anna Savitskaia">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <!-- Parallax code and SVG mask made according to Kevin Powell's instructions https://www.kevinpowell.co/-->
 </head>
 
 <body>
-    <header>
-        <h1>Success Washboard! Call us now! <a href="tel:1-777-777-7777">1-777-777-7777</a></h1>
-    </header>
-    <nav id="nav_menu">
-        <img src="assets/img/logo.png" alt="Logo" width="100" height="100">
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
-    <main class="hero">
-        <section>
-            <h2>A new classic model has arrived!</h2>
-            <p>Discover the ultimate laundry revolution with our advanced washing board, <br>
-                seamlessly fusing classic technology and modern design <br>
-                for an eco-friendly and efficient cleaning experience. <br>
-                Experience tranquility with its super quiet operation, ergonomic comfort during use, <br>
-                and the convenience of a smart control system. <br>
-                Elevate your laundry routine today and embrace a new era of sustainable, hassle-free cleanliness.
-            <p><a class="button" href="#features">Click for more information</a></p>
-        </section>
-        <figure><img src="assets/img/product.jpg" alt="Washboard" width="400">
-        </figure>
-    </main>
-
-    <div id="features" class="box">
-        <div class="item item1">
-            <a href="https://en.wikipedia.org/wiki/Antiquity">
-                <img class=utility_pic src="assets/img/basket.png" alt="laundry basket" width="100">
-                <h3>Classic Technology</h3>
-                <p>Rediscover the timeless art of laundry with our classic washing board technology. Embrace a touch
-                    of nostalgia as you achieve sparkling clean clothes, all while celebrating the efficiency of a
-                    time-honored method.</p>
-            </a>
-        </div>
-        <div class="item item2">
-            <a href="https://en.wikipedia.org/wiki/Aesthetics">
-                <img class=utility_pic src="assets/img/handwash.png" alt="handwash" width="100">
-                <h3>Cool Design</h3>
-                <p>Elevate your laundry routine with a modern twist - our washing board combines cool, contemporary
-                    design with the simplicity of traditional washing.
-                    Experience the perfect blend of aesthetics and functionality for laundry that's both stylish and
-                    efficient.</p>
-            </a>
-        </div>
-        <div class="item item3">
-            <a href="https://en.wikipedia.org/wiki/Time_management">
-                <img class=utility_pic src="assets/img/clothes.png" alt="clothes" width="100">
-                <h3>Super Cleanness</h3>
-                <p>Save time and effort as you effortlessly tackle tough stains, all while
-                    knowing you're contributing to a greener planet through reduced water and energy usage.</p>
-            </a>
-        </div>
-        <div class="item item4">
-            <a href="https://en.wikipedia.org/wiki/Ecology">
-                <img class=utility_pic src="assets/img/eco.png" alt="clean water drop" width="100">
-                <h3>Eco Friendly</h3>
-                <p>Say goodbye to excessive energy consumption
-                    and hello to eco-friendly laundry days. Our innovative washing
-                    board reduces your carbon footprint while delivering exceptional cleaning results.</p>
-            </a>
-        </div>
+  <header class="primary-header">
+    <h1>Legendary chocolates that are already 170 years old!<br>
+      "Clumsy Bear" - How Sweet Is This!</h1>
+  </header>
+  <div class="parallax">
+    <div class="wrapper">
+      <div class="primary-header__inner">
+      </div>
     </div>
-</body>
-<footer>
-    <p>Success Washboard All Rights Reserved &copy; </p>
+    <div class="hero">
+      <div class="wrapper">
+        <h1 class="hero__title">Best candies!</h1>
+      </div>
+    </div>
+    <img class="parallax__background" src="assets/background.jpg" alt="Paint The Morning in a Pine Fores, four bears">
+    <img class="parallax__sparkle" src="assets/sparkle.webp" alt="sparkle stars">
+    <img class="parallax__foreground-back" src="assets/foreground-back.webp" alt="pine tree branches">
+    <img class="parallax__foreground-front" src="assets/foreground-front.webp" alt="sparkles">
+    <img class="parallax__baby_bear" src="assets/baby_bear.webp" alt="baby bear">
+    <img class="parallax__mommy_bear" src="assets/mommy_bear.webp" alt="mommy bear">
+    <img class="parallax__candy" src="assets/candy.webp" alt="candy">
+  </div>
+
+  <main class="main-content">
+    <figure class="factory">
+      <img class="factory-image" src="assets/factory.png" alt="candy factory" width="500">
+    </figure>
+    <section class="about">
+      <h2>Never outdated classic and exquisite taste!</h2>
+      <p>The recipe for the candy "Clumsy Bear" was invented by confectioner<br>
+        and founder of the factory F. Einem in 1851. Delicate praline of grated<br>
+        almonds with a light vanilla aroma between two layers of wafers in<br>
+        classic chocolate glaze. On the candy wrapper there is a reproduction<br>
+        of the famous painting <a href="https://en.wikipedia.org/wiki/Morning_in_a_Pine_Forest">
+          The Morning in a Pine Forest</a> painted by Russian<br>
+        artists Ivan Shishkin and Konstantin Savitsky.<br>
+        The factory was famous for its cookies and sweets and supplied sweets to<br>
+        the Tsar's court. After the revolution, the factory was nationalized and<br>
+        renamed "Red October". These famous candies are still produced there to<br>
+        this day. Just like almost two centuries ago, every child in Russia dreams<br>
+        of receiving a box of “Clumsy Bear” chocolates for Christmas.<br>
+      <p><a class="button" href="#order">Order now!</a></p>
+    </section>
+  </main>
+  <div class="box">
+    <div class="item item1">
+      <a href="https://www.uniconf.ru/products/mishka-konf-ko">
+        <img class=utility_pic src="assets/candy.png" alt="chocolate candy" width="200">
+        <h3>Classic Recipe</h3>
+      </a>
+      <p>Ingredients: cocoa powder, sugar, grated almond kernels, cocoa butter, sheet wafers
+        (wheat flour, sunflower oil, table salt, baking soda), vanilla flavoring.</p>
+
+    </div>
+    <div class="item item2">
+      <a href="https://www.uniconf.ru/assortment/catalog/moskovskie-konditerskie-fabriki">
+        <img class=utility_pic src="assets/heap.jpg" alt="heap of candies" width="200">
+        <h3>Factory in numbers:</h3>
+      </a>
+      <ul>
+        <li>2,700 employees</li>
+        <li>35 production lines and sites</li>
+        <li>70 thousand tons of finished products per year</li>
+        <li>More than 300 types of confectionery products</li>
+        <li>2 museum sites</li>
+      </ul>
+    </div>
+    <div class="item item3">
+      <a href="https://www.uniconf.ru/factories/krasny-octyabr">
+        <img class=utility_pic src="assets/candy1.png" alt="chocolate candy" width="200">
+        <h3>New Design</h3>
+      </a>
+      <p>The new form with a delicate nut souffle and crispy waffles will delight both adults and children!</p>
+
+    </div>
+  </div>
+
+  <footer class="flexItem">
+    <p><img src="assets/red_october.png" alt="Red October logo" width="100"></p>
+    <p>115184, RUSSIA, Moscow,
+      2nd Novokuznetsky per., 13/15, Bldg. 1.
+      Operating hours: Mon-Sat from 8:00 to 20:00
+      Phone: 8(800)200 55 99
+      Email: pr@uniconf.ru</p>
+    <p><a href="https://en.wikipedia.org/wiki/Krasny_Oktyabr_(confectionery_brand)">RED OCTOBER ex-Einem candy factory.
+        Since 1851 &copy;</a></p>
+
+
+    <div id="order">
+      <h2>Order Form</h2>
+      <form name="upload_form" action="#" method="post" enctype="multipart/form-data">
+        <!--Name Input -->
+        <label for="name">Name </label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" placeholder="myemail@mail.ca" required>
+
+        <!--  Phone Input -->
+        <label for="phone">Phone </label>
+        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890"
+          pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" required>
+
+        <!--  Address Input -->
+        <label for="adr">Address </label>
+        <input type="text" id="adr" name="address" placeholder="1234 Yonge Street" required>
+
+        <!--  Submit button -->
+        <input class="formButton" type="submit" value="Submit">
+      </form>
+    </div>
     <p>2023</p>
-    <p id="lastVisit"></p>
-</footer>
+  </footer>
+</body>
 
 </html>

@@ -1,0 +1,273 @@
+.parallax {
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 0;
+  min-height: 70vh;
+  display: grid;
+  grid-template-areas: "stack";
+}
+
+/* parallax animation*/
+.parallax > * {
+  grid-area: stack;
+  animation: parallax linear;
+  /* Validator catch here the Parse Error, but without this finktion parallax doesn't work*/
+  animation-timeline: scroll();
+}
+
+.parallax > img {
+  width: 100%;
+}
+
+
+/*block movement speed when scrolling*/
+.primary-header,
+.hero {
+  --parallax-speed: 10;
+  z-index: 10;
+}
+
+/* negative speed is used to direct upward movement when scrolling*/
+.parallax__background {
+  --parallax-speed: -10;
+
+  z-index: 1;
+  min-height: 80%;
+  object-fit: cover;
+  width: 85%;
+  margin: auto;
+}
+
+.parallax__sparkle {
+  --parallax-speed: -20;
+  z-index: 2;
+  width: 85%;
+  margin: auto;
+}
+
+/* different speed values are needed to create depth when distant objects move slower than those in front*/
+.parallax__mommy_bear {
+  --parallax-speed: 25;
+  z-index: 4;
+  width: 85%;
+  margin: auto;
+}
+
+.parallax__baby_bear {
+  --parallax-speed: 10;
+  z-index: 5;
+  width: 85%;
+  margin: auto;
+}
+
+.parallax__candy {
+  --parallax-speed: 30;
+  z-index: 3;
+  width: 85%;
+  margin: auto;
+}
+
+.parallax__foreground-front,
+.parallax__foreground-back {
+  z-index: 999;
+  align-self: end;
+  width: 85%;
+  margin: auto;
+}
+
+.parallax__foreground-back {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  mix-blend-mode: hard-light;
+  width: 85%;
+  margin: auto;
+}
+
+.main-content {
+  position: relative;
+  /* z-index: 1; */
+  padding-block: 6rem;
+}
+
+@keyframes parallax {
+  to {
+    transform:
+      translateY(calc(var(--parallax-speed) * 15px));
+  }
+}
+
+/* general styling */
+
+html {
+  color-scheme: dark;
+  /*background-color: #3f201cfe;*/
+  background-image: linear-gradient(to bottom right, #3f201cfe,  #3f201cfe,  rgb(18, 74, 8));
+}
+
+h1 {
+  color: #f4b30d;
+}
+
+body {
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 1.25rem;
+  min-height: 200vh;
+}
+
+img {
+  display: block;
+  align-self: center;
+  max-width: 80%;
+}
+
+.wrapper {
+  width: min(65rem, 100% - 4rem);
+  margin-inline: auto;
+}
+
+main {
+  height: 50vh;
+  color: #f4b30d;
+}
+
+footer {
+  flex-basis: 100%;
+  margin: 2em auto;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 1em;
+  color: #f4b30d;
+  width: 80%;
+}
+
+/*using svg to create an interesting shaped mask on an image*/
+.factory-image{
+  -webkit-mask-image: url("blot.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: bottom;
+  width: 100%;
+}
+
+.factory{
+  max-width: 100%;
+  margin: 0;
+}
+
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  color: #f4b30d;
+  background: rgb(18, 74, 8);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+
+.primary-header {
+  padding: 2em;
+  margin-left: 8em;
+}
+
+.primary-header__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  margin-block-start: max(20vh, 8rem);
+  justify-content: center;
+}
+
+.hero__title {
+  font-size: 5rem;
+  max-width: 10ch;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(18, 74, 8);
+}
+
+
+.box {
+  padding: 5em;
+  margin: 5vh auto 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: rgb(18, 74, 8);
+  margin: 1em;
+  padding: 1em;
+  color: #f4b30d;
+  max-width: 15em;
+  border-radius: 0.5em;
+}
+
+
+.utility_pic {
+  margin-left: 2.5em;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.formButton {
+  background: rgb(18, 74, 8);
+  color: #f4b30d;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border-style: none;
+}
+
+a:hover {
+  color: rgb(22, 217, 93);
+}
+
+a {
+  color: #f6e2bf;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.factory {
+  float: left;
+}
+
+.about {
+  float: left;
+}
+
+#order form {
+  width: 90vw;
+  justify-content: left;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto;
+  grid-template-columns: 7em 15em;
+}
+
+#order h2 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.flexItem {
+  padding: 1.5em;
+}
