@@ -2,133 +2,131 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>How Sweet Is This!</title>
-  <meta name="description" content="Favoutite candy">
-  <meta name="author" content="Anna Savitskaia">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <!-- Parallax code and SVG mask made according to Kevin Powell's instructions https://www.kevinpowell.co/-->
+    <meta charset="utf-8">
+    <title>Anna Robotics</title>
+    <meta name="author" content="Anna Savitskaia">
+    <meta name="description" content="Anna Robotics">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+    <!-- All images created by DALL-E 3 -->
+    <script src="script.js"></script>
+    <!--author of snowflakes library: simeydotme (simey.me@gmail.com), license: MPL-2.0-->
+    <script src="sparticles.js"></script>
 </head>
 
 <body>
-  <header class="primary-header">
-    <h1>Legendary chocolates that are already 170 years old!<br>
-      "Clumsy Bear" - How Sweet Is This!</h1>
-  </header>
-  <div class="parallax">
-    <div class="wrapper">
-      <div class="primary-header__inner">
-      </div>
+    <header>
+        <h1>Call us now! <a href="tel:(777)-777-7777">(777)-777-7777</a></h1>
+
+        <nav id="nav_menu">
+            <div class="logo"><img src="img/logo.jpg" alt="Logo" width="100" height="100">
+                <h1>Anna Robotics</h1>
+            </div>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main class="hero">
+        <section>
+            <h2>Welcome to Anna Robotics!</h2>
+            <h2>Cyber pets who cares about you!</h2>
+            <!-- Call-to-action button -->
+            <a class="button" href="#features">Buy one, get one for free!</a>
+        </section>
+        <div class="container">
+            <figure>
+                <img src="img/promo.jpg" alt="Robo_dog" width="400">
+            </figure>
+            <div class="overlay offer">Limited time offer!</div>
+        </div>
+    </main>
+    <div id="features" class="box">
+        <!-- Product description -->
+        <div class="item item1">
+            <a href="product.html#Robo_dog">
+                <img class=utility_pic src="img/dog.jpg" alt="Robo-dog" width="200">
+                <h3>Robo-dog</h3>
+
+                <p>Meet the Robo-Pup: Your solution to hassle-free pet ownership!
+                    This cutting-edge robotic dog combines loyalty and efficiency,
+                    requiring no feeding or cleanup while actively assisting in
+                    maintaining a pristine environment.<br><br>
+                    With its smart capabilities and versatile functionality,
+                    the Robo-Pup is the perfect addition
+                    to any household, providing companionship you need.</p>
+                <p>$215.99</p>
+            </a>
+        </div>
+        <div class="item item2">
+            <a href="product.html#Robo_horse">
+                <img class=utility_pic src="img/horse.jpg" alt="Robo-horse" width="200">
+                <h3>Robo-horse</h3>
+
+                <p>"Introducing the Robo-Steed: Redefining horse ownership with effortless
+                    elegance and functionality! This state-of-the-art robotic equine companion
+                    embodies the grace of a real horse without the upkeep, offering a mess-free
+                    experience with no feeding or stable maintenance required.<br><br>
+                    Experience the perfect blend of nature's magnificence and technological innovation
+                    with the Robo-Steed, your versatile and low-maintenance equine companion.</p>
+                <p>$569.99</p>
+            </a>
+        </div>
+        <div class="item item3">
+            <a href="product.html#Robo_turtle">
+                <img class=utility_pic src="img/turtle.jpg" alt="Robo-turtle" width="200">
+                <h3>Robo-turtle</h3>
+
+                <p>Meet the Turtle-Vac: Your ultimate cleaning companion redefining convenience!
+                    This innovative robotic vacuum effortlessly ensures a pristine environment
+                    with its autonomous operation and adeptness at reaching inaccessible spots,
+                    delivering a spotless home without the hassle. <br><br>
+                    Embrace effortless cleaning and bid farewell to traditional vacuuming with
+                    the Turtle-Vac, combining the agility of a turtle with cutting-edge cleaning technology.</p>
+                <p>$325.99</p>
+            </a>
+        </div>
+        <div class="item item4">
+            <a href="product.html#Robo_parrot">
+                <img class=utility_pic src="img/parrot.jpg" alt="Robo-parrot" width="200">
+                <h3>Robo-parrot</h3>
+
+                <p>Meet the Robo-Parrot: Your all-in-one solution for delivery and security needs!
+                    This technologically advanced robot, inspired by the intelligence of parrots,
+                    flawlessly delivers orders to your doorstep while providing vigilant surveillance
+                    for enhanced security.<br><br>
+                    Experience convenience and peace of mind with the Robo-Parrot, your charming and
+                    versatile assistant revolutionizing delivery services and safeguarding your surroundings</p>
+                <p>$299.99</p>
+            </a>
+        </div>
     </div>
-    <div class="hero">
-      <div class="wrapper">
-        <h1 class="hero__title">Best candies!</h1>
-      </div>
-    </div>
-    <img class="parallax__background" src="assets/background.jpg" alt="Paint The Morning in a Pine Fores, four bears">
-    <img class="parallax__sparkle" src="assets/sparkle.webp" alt="sparkle stars">
-    <img class="parallax__foreground-back" src="assets/foreground-back.webp" alt="pine tree branches">
-    <img class="parallax__foreground-front" src="assets/foreground-front.webp" alt="sparkles">
-    <img class="parallax__baby_bear" src="assets/baby_bear.webp" alt="baby bear">
-    <img class="parallax__mommy_bear" src="assets/mommy_bear.webp" alt="mommy bear">
-    <img class="parallax__candy" src="assets/candy.webp" alt="candy">
-  </div>
-
-  <main class="main-content">
-    <figure class="factory">
-      <img class="factory-image" src="assets/factory.png" alt="candy factory" width="500">
-    </figure>
-    <section class="about">
-      <h2>Never outdated classic and exquisite taste!</h2>
-      <p>The recipe for the candy "Clumsy Bear" was invented by confectioner<br>
-        and founder of the factory F. Einem in 1851. Delicate praline of grated<br>
-        almonds with a light vanilla aroma between two layers of wafers in<br>
-        classic chocolate glaze. On the candy wrapper there is a reproduction<br>
-        of the famous painting <a href="https://en.wikipedia.org/wiki/Morning_in_a_Pine_Forest">
-          The Morning in a Pine Forest</a> painted by Russian<br>
-        artists Ivan Shishkin and Konstantin Savitsky.<br>
-        The factory was famous for its cookies and sweets and supplied sweets to<br>
-        the Tsar's court. After the revolution, the factory was nationalized and<br>
-        renamed "Red October". These famous candies are still produced there to<br>
-        this day. Just like almost two centuries ago, every child in Russia dreams<br>
-        of receiving a box of “Clumsy Bear” chocolates for Christmas.<br>
-      <p><a class="button" href="#order">Order now!</a></p>
-    </section>
-  </main>
-  <div class="box">
-    <div class="item item1">
-      <a href="https://www.uniconf.ru/products/mishka-konf-ko">
-        <img class=utility_pic src="assets/candy.png" alt="chocolate candy" width="200">
-        <h3>Classic Recipe</h3>
-      </a>
-      <p>Ingredients: cocoa powder, sugar, grated almond kernels, cocoa butter, sheet wafers
-        (wheat flour, sunflower oil, table salt, baking soda), vanilla flavoring.</p>
-
-    </div>
-    <div class="item item2">
-      <a href="https://www.uniconf.ru/assortment/catalog/moskovskie-konditerskie-fabriki">
-        <img class=utility_pic src="assets/heap.jpg" alt="heap of candies" width="200">
-        <h3>Factory in numbers:</h3>
-      </a>
-      <ul>
-        <li>2,700 employees</li>
-        <li>35 production lines and sites</li>
-        <li>70 thousand tons of finished products per year</li>
-        <li>More than 300 types of confectionery products</li>
-        <li>2 museum sites</li>
-      </ul>
-    </div>
-    <div class="item item3">
-      <a href="https://www.uniconf.ru/factories/krasny-octyabr">
-        <img class=utility_pic src="assets/candy1.png" alt="chocolate candy" width="200">
-        <h3>New Design</h3>
-      </a>
-      <p>The new form with a delicate nut souffle and crispy waffles will delight both adults and children!</p>
-
-    </div>
-  </div>
-
-  <footer class="flexItem">
-    <p><img src="assets/red_october.png" alt="Red October logo" width="100"></p>
-    <p>115184, RUSSIA, Moscow,
-      2nd Novokuznetsky per., 13/15, Bldg. 1.
-      Operating hours: Mon-Sat from 8:00 to 20:00
-      Phone: 8(800)200 55 99
-      Email: pr@uniconf.ru</p>
-    <p><a href="https://en.wikipedia.org/wiki/Krasny_Oktyabr_(confectionery_brand)">RED OCTOBER ex-Einem candy factory.
-        Since 1851 &copy;</a></p>
-
-
-    <div id="order">
-      <h2>Order Form</h2>
-      <form name="upload_form" action="#" method="post" enctype="multipart/form-data">
-        <!--Name Input -->
-        <label for="name">Name </label>
-        <input type="text" id="name" name="name" required>
-
-        <!-- Email Input -->
-        <label for="email">Email </label>
-        <input type="email" id="email" name="email" placeholder="myemail@mail.ca" required>
-
-        <!--  Phone Input -->
-        <label for="phone">Phone </label>
-        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890"
-          pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" required>
-
-        <!--  Address Input -->
-        <label for="adr">Address </label>
-        <input type="text" id="adr" name="address" placeholder="1234 Yonge Street" required>
-
-        <!--  Submit button -->
-        <input class="formButton" type="submit" value="Submit">
-      </form>
-    </div>
-    <p>2023</p>
-  </footer>
+    <a href="about.html">
+        <div class="falling">
+            <!-- Special Christmas offer information -->
+            <h1>Special Christmas Offer!</h1>
+            <h1>Call Us Today and Get Exclusive Gift!!</h1>
+            <h1>Click to Learn More</h1>
+        </div>
+    </a>
+    <hr>
+    <!-- Contact information and copyright -->
+    <footer>
+        <p>Call us now! <a href="tel:(777)-777-7777">(777)-777-7777</a></p>
+        <p>© 2023 Anna-Robotics. All rights reserved.</p>
+        <p>123 Yonge Street, Toronto, ON, Canada</p>
+    </footer>
 </body>
 
 </html>

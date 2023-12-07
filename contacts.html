@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Anna Robotics</title>
+    <meta name="author" content="Anna Savitskaia">
+    <meta name="description" content="Anna Robotics">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+    <!-- All images created by DALL-E 3 -->
+</head>
+
+<body>
+    <header>
+        <h1>Call us now! <a href="tel:(777)-777-7777">(777)-777-7777</a></h1>
+
+        <nav id="nav_menu">
+            <div class="logo"><img src="img/logo.jpg" alt="Logo" width="100" height="100">
+                <h1>Anna Robotics</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contacts.html" class="current">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flexItem" id="checkout">
+        <h2>Checkout Form</h2>
+        <form name="upload_form" action="#" method="post" enctype="multipart/form-data">
+            <div class="order">
+                <h2>Payment</h2>
+                <div class="flex-row"><input type="radio" name="payment" id="card" checked>
+                    <h3><label for="card">Credit card</label></h3>
+                </div>
+                <label for="cardname">Name on Card</label>
+                <input type="text" id="cardname" name="cardname" placeholder="Adam Smith" required>
+                <label for="cardnumber">Credit card number</label>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="0000-0000-0000-0000" required>
+                <label for="expdate">Expiration Date</label>
+                <input type="text" id="expdate" name="expdate" placeholder="MM/YY" required>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+                <div class="flex-row">
+                    <input type="radio" name="payment" id="PayPal">
+                    <h3><label for="PayPal">PayPal</label></h3>
+                </div>
+                <label id="emailLabel" for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="myemail@mail.ca">
+
+
+                <div class="flex-row">
+                    <input type="radio" name="payment" id="Crypto">
+                    <h3><label for="Crypto">Pay with Crypto</label></h3>
+                </div>
+                <label for="crypto_wallet">Crypto Wallet: </label>
+                <input type="text" id="crypto_wallet" name="crypto_wallet" placeholder="coinbase.com/wallet">
+
+                <h2>Billing Address</h2>
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" placeholder="111, Main Street" required>
+                <label for="City">City: </label>
+                <input type="text" id="City" name="City" placeholder="Toronto" required>
+                <label for="postal">Postal: </label>
+                <input type="text" id="postal" name="postal" required placeholder="A1B-2C3">
+                <label for="province">Province</label>
+                <!-- Dropdown list of provinces-->
+                <select id="province" name="province">
+                    <option value="ontario">Ontario</option>
+                    <option value="alberta">Alberta</option>
+                    <option value="british columbia">British Columbia</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="new brunswick">New Brunswick</option>
+                    <option value="newfoundland and labrador">Newfoundland and Labrador</option>
+                    <option value="nova scotia">Nova Scotia</option>
+                    <option value="prince edward island">Prince Edward Island</option>
+                    <option value="quebec">Quebec</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                    <option value="northwest territories">Northwest Territories</option>
+                    <option value="nunavut">Nunavut</option>
+                    <option value="yukon">Yukon</option>
+                </select>
+                <label for="country">Country: </label>
+                <input type="text" id="country" name="country" value="Canada" required readonly>
+                <h2>Contact</h2>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="([0-9]{3})-[0-9]{3}-[0-9]{3}" required
+                    placeholder="(333)-333-333">
+
+                <!-- Dropdown list of product to choose-->
+                <h2>Select Your Robot:</h2>
+                <select id="order" name="order">
+                    <option value="RD1001">Robo-dog, Model: RD1001</option>
+                    <option value="RD1002">Robo-dog, Model: RD1001</option>
+                    <option value="RH1011">Robo-horse, Model: RH1011</option>
+                    <option value="RH1012">Robo-horse, Model: RH1012</option>
+                    <option value="RT1021">Robo-turtle, Model: RT1021</option>
+                    <option value="RT1022">Robo-turtle, Model: RT1022</option>
+                    <option value="RP1031">Robo-parrot, Model: RP1031</option>
+                    <option value="RP1032">Robo-parrot, Model: RP1032</option>
+                </select>
+                <div class="flex-row">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe for new products</label>
+                </div>
+                <input class="button" type="submit" value="Pay Now">
+            </div>
+        </form>
+    </div>
+    <br><br><br>
+    <h2>Our Location:</h2>
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8674756236933!2d-79.37825529999999!3d43.6509255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb32e35c9677%3A0x7efd2e0295746f98!2s123%20Yonge%20St%2C%20Toronto%2C%20ON%20M5C%201W4!5e0!3m2!1sen!2sca!4v1701924483154!5m2!1sen!2sca"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <section class="address">
+        <h2>Our Contacts:</h2>
+        <h3>M5C 1W4 <br>
+            Yonge Street <br>
+            Toronto <br>
+            ONTARIO <br>
+            Canada <br>
+        </h3>
+        <h3><a href="mailto:bestwashboard@mail.ca">Anna-Robotics@mail.com</a>.<br></h3>
+        <h3><a href="tel:1-555-555-55">additional tel: 1-555-555-55</a><br>
+            <a href="tel:1-444-444-444">fax: 1-444-444-444</a>
+        </h3>
+    </section>
+    <section class="hours">
+        <h2>Operating Hours:</h2>
+        <h3>Monday to Friday - 9:00 am to 7:00 pm <br>
+            Saturday - 10:00 am to 4:00 pm <br>
+            Sunday closed <br>
+        </h3>
+    </section>
+    <section class="social_media">
+        <h2>Follow Us in Social Media:</h2>
+        <div class="social">
+            <a href="https://twitter.com/home"><img src="img/twitter.png" alt="twitter" width="30" height="30"></a>
+            <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" alt="whatsapp" width="30" height="30"></a>
+            <a href="https://telegram.org/"><img src="img/telegram.png" alt="telegram" width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" width="30" height="30"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Call us now! <a href="tel:(777)-777-7777">(777)-777-7777</a></p>
+        <p>© 2023 Anna-Robotics. All rights reserved.</p>
+        <p>123 Yonge Street, Toronto, ON, Canada</p>
+    </footer>
+</body>
+
+</html>
