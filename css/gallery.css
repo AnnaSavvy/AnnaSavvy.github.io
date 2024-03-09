@@ -1,0 +1,35 @@
+body {
+    background-color:#eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#gallery li img {
+    filter: grayscale(80%);
+}
+
+#gallery li img:hover {
+    filter: none;
+}
+
+#gallery li img.active {
+    filter: none;
+}
+
+h1 {
+    text-align: center;
+    color:brown;
+}
+
+figcaption {
+    color: brown;
+    font-size: 1.5em;
+}
